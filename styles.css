@@ -419,6 +419,12 @@ main,
   width: 28px;
 }
 
+.link-icon svg {
+  fill: currentColor;
+  height: 17px;
+  width: 17px;
+}
+
 .section {
   padding-top: 70px;
 }
