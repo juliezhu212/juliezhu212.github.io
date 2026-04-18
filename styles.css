@@ -315,6 +315,7 @@ a {
 .signal-strip article,
 .gloss-panel,
 .project-card,
+.education-card,
 .timeline,
 .contact {
   background: rgba(255, 255, 255, 0.64);
@@ -335,12 +336,14 @@ a {
 
 .signal-strip h2,
 .project-card h3,
+.education-card h3,
 .timeline-item h3 {
   margin: 8px 0 10px;
 }
 
 .signal-strip p,
 .project-card p,
+.education-card p,
 .timeline-item p,
 .about p {
   color: var(--muted);
@@ -479,6 +482,42 @@ a {
   width: 12px;
 }
 
+.education-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 28px;
+}
+
+.education-card {
+  min-height: 240px;
+  padding: 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::after {
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.62), transparent 58%);
+  content: "";
+  height: 170%;
+  opacity: 0.52;
+  position: absolute;
+  right: -36%;
+  top: -42%;
+  transform: rotate(18deg);
+  width: 42%;
+}
+
+.education-card h3 {
+  font-size: 1.55rem;
+  margin-top: 14px;
+  max-width: 560px;
+}
+
+.education-card p {
+  max-width: 560px;
+}
+
 .skills {
   padding-bottom: 92px;
 }
@@ -572,6 +611,7 @@ a {
 
   .signal-strip,
   .about-grid,
+  .education-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
