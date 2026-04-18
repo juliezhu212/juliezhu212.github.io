@@ -728,6 +728,7 @@ a {
 
 .timeline-dot.current {
   background: var(--hot-pink);
+  box-shadow: 0 0 0 1px rgba(255, 47, 146, 0.42), 0 0 22px rgba(255, 47, 146, 0.32);
 }
 
 .timeline-stem {
@@ -741,6 +742,13 @@ a {
 .timeline-copy h3 {
   font-size: 1.08rem;
   margin: 4px 0 6px;
+}
+
+.timeline-role {
+  color: rgba(96, 82, 93, 0.76);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 7px;
 }
 
 .timeline-copy p:not(.tag) {
