@@ -404,7 +404,6 @@ a {
 .project-card,
 .education-card,
 .journey-card,
-.skill-card,
 .timeline,
 .contact {
   background: var(--glass-fill);
@@ -420,7 +419,6 @@ a {
 .project-card::before,
 .education-card::before,
 .journey-card::before,
-.skill-card::before,
 .timeline::before,
 .contact::before {
   background: var(--glass-sheen);
@@ -437,7 +435,6 @@ a {
 .project-card > *,
 .education-card > *,
 .journey-card > *,
-.skill-card > *,
 .timeline > *,
 .contact > * {
   position: relative;
@@ -452,8 +449,7 @@ a {
 .signal-strip article:hover,
 .project-card:hover,
 .education-card:hover,
-.journey-card:hover,
-.skill-card:hover {
+.journey-card:hover {
   box-shadow: var(--glass-shadow), 0 28px 90px rgba(255, 47, 146, 0.12);
   transform: translateY(-3px);
 }
@@ -468,7 +464,6 @@ a {
 .project-card h3,
 .education-card h3,
 .journey-card h3,
-.skill-card h3,
 .timeline-item h3 {
   margin: 6px 0 8px;
 }
@@ -477,7 +472,6 @@ a {
 .project-card p,
 .education-card p,
 .journey-card p,
-.skill-card p,
 .timeline-item p,
 .about p {
   color: var(--muted);
@@ -583,15 +577,13 @@ a {
 
 .project-card .tag::before,
 .education-card .tag::before,
-.journey-card .tag::before,
-.skill-card .tag::before {
+.journey-card .tag::before {
   content: "<";
 }
 
 .project-card .tag::after,
 .education-card .tag::after,
-.journey-card .tag::after,
-.skill-card .tag::after {
+.journey-card .tag::after {
   content: " />";
 }
 
@@ -798,42 +790,16 @@ a {
   padding-bottom: 92px;
 }
 
-.skills-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 28px;
-}
-
-.skill-card {
-  min-height: 235px;
-  overflow: hidden;
-  padding: 22px;
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.skill-card h3 {
-  font-size: 1.08rem;
-}
-
-.skill-card ul {
-  display: grid;
-  gap: 8px;
-  list-style: none;
-  margin: 22px 0 0;
-  padding: 0;
-}
-
-.skill-card li {
-  border-top: 1px solid rgba(255, 255, 255, 0.58);
-  color: var(--muted);
-  font-weight: 700;
-  line-height: 1.35;
-  padding-top: 8px;
-}
-
 .skill-cloud {
   margin-top: 22px;
+}
+
+.skill-flow .timeline-entry + .timeline-entry {
+  margin-top: 22px;
+}
+
+.skill-flow .timeline-role {
+  max-width: 720px;
 }
 
 .skill-cloud span {
@@ -938,7 +904,6 @@ a {
   .education-grid,
   .journey-grid,
   .journey-grid.two-up,
-  .skills-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }
@@ -1006,7 +971,6 @@ a {
   .project-card,
   .education-card,
   .journey-card,
-  .skill-card,
   .timeline,
   .contact {
     backdrop-filter: blur(20px) saturate(1.35);
@@ -1020,13 +984,8 @@ a {
   .timeline,
   .education-card,
   .journey-card,
-  .skill-card,
   .availability {
     padding: 20px;
-  }
-
-  .skill-card {
-    min-height: auto;
   }
 
   .journey-card {
@@ -1076,7 +1035,7 @@ a {
   .project-grid,
   .education-grid,
   .journey-grid,
-  .skills-grid {
+  .skill-flow {
     display: block;
   }
 
@@ -1085,7 +1044,6 @@ a {
   .project-card,
   .education-card,
   .journey-card,
-  .skill-card,
   .timeline,
   .contact {
     box-shadow: none;
