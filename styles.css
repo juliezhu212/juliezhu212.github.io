@@ -181,7 +181,7 @@ a {
 .hero {
   align-items: center;
   display: grid;
-  min-height: 94vh;
+  min-height: 82vh;
   overflow: hidden;
   padding: 124px 24px 64px;
   position: relative;
@@ -247,16 +247,16 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(3.4rem, 8vw, 7.5rem);
-  max-width: 970px;
+  font-size: clamp(3rem, 6.2vw, 5.8rem);
+  max-width: 780px;
 }
 
 .hero-copy {
   color: #263137;
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
-  line-height: 1.6;
-  margin: 26px 0 0;
-  max-width: 650px;
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.55;
+  margin: 22px 0 0;
+  max-width: 560px;
 }
 
 .hero-copy::before {
@@ -485,7 +485,7 @@ a {
 }
 
 .section {
-  padding: 94px 24px 0;
+  padding: 76px 24px 0;
 }
 
 .about-grid {
@@ -496,14 +496,14 @@ a {
 }
 
 .about p {
-  max-width: 760px;
+  max-width: 620px;
 }
 
 .about h2,
 .section-heading h2,
 .contact h2 {
-  font-size: clamp(2.3rem, 5vw, 4.8rem);
-  max-width: 900px;
+  font-size: clamp(1.85rem, 3.4vw, 3.35rem);
+  max-width: 760px;
 }
 
 .availability {
@@ -548,7 +548,7 @@ a {
 }
 
 .project-card {
-  min-height: 360px;
+  min-height: 300px;
   overflow: hidden;
   padding: 24px;
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -578,7 +578,7 @@ a {
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .project-card .tag::before,
@@ -663,7 +663,7 @@ a {
   display: grid;
   gap: 18px;
   grid-template-columns: 54px 1fr;
-  min-height: 260px;
+  min-height: 220px;
   overflow: hidden;
   padding: 26px;
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -688,7 +688,7 @@ a {
 }
 
 .journey-card h3 {
-  font-size: 1.35rem;
+  font-size: 1.18rem;
 }
 
 .journey-card p {
@@ -744,14 +744,14 @@ a {
 }
 
 .skill-card {
-  min-height: 310px;
+  min-height: 270px;
   overflow: hidden;
   padding: 24px;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .skill-card h3 {
-  font-size: 1.22rem;
+  font-size: 1.08rem;
 }
 
 .skill-card ul {
@@ -775,8 +775,8 @@ a {
 }
 
 .skill-cloud span {
-  font-size: clamp(1rem, 2vw, 1.18rem);
-  padding: 12px 15px;
+  font-size: clamp(0.9rem, 1.4vw, 1.02rem);
+  padding: 10px 12px;
 }
 
 .contact {
@@ -788,13 +788,13 @@ a {
 }
 
 .contact h2 {
-  max-width: 770px;
+  max-width: 560px;
 }
 
 .contact p:not(.section-kicker) {
   color: var(--muted);
   line-height: 1.65;
-  max-width: 680px;
+  max-width: 540px;
 }
 
 .contact-actions {
@@ -859,7 +859,7 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 12vw, 5.2rem);
+    font-size: clamp(2.8rem, 10vw, 4.6rem);
   }
 
   .hero-copy {
@@ -908,7 +908,7 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(2.75rem, 13vw, 4.1rem);
+    font-size: clamp(2.45rem, 11vw, 3.6rem);
     line-height: 1;
   }
 
@@ -936,7 +936,7 @@ a {
   }
 
   .section {
-    padding-top: 70px;
+    padding-top: 62px;
   }
 
   .signal-strip article,
