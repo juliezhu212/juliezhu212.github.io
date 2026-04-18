@@ -474,8 +474,9 @@ main,
 }
 
 .github-icon {
-  --icon-bg: #1f2328;
-  --icon-shadow: 0 8px 18px rgba(31, 35, 40, 0.22);
+  --icon-bg: #000;
+  --icon-border: rgba(255, 255, 255, 0.78);
+  --icon-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
 }
 
 .link-icon svg {
