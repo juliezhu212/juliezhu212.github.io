@@ -264,7 +264,6 @@ a {
   backdrop-filter: blur(22px) saturate(1.45);
 }
 
-.nav-links a::before,
 .button::before,
 .text-link::before {
   background: linear-gradient(110deg, transparent 10%, rgba(255, 255, 255, 0.52) 28%, transparent 46%);
