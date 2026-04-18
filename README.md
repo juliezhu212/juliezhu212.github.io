@@ -1,6 +1,6 @@
 # Julie Zhu Portfolio
 
-A glossy, recruiter-facing personal portfolio for GitHub Pages.
+A glossy, recruiter-facing machine learning engineering portfolio for GitHub Pages.
 
 ## Edit Fast
 
@@ -9,4 +9,4 @@ A glossy, recruiter-facing personal portfolio for GitHub Pages.
 - Small interactions: `script.js`
 - Photos and generated hero asset: `assets/`
 
-Replace the placeholder project descriptions with specific results, links, and metrics as your job search materials get sharper.
+Keep project descriptions current with measurable outcomes, links, and role-specific evidence for machine learning engineering applications.
