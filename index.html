@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Julie Zhu's machine learning engineering portfolio focused on GenAI evaluation, benchmarking, and production-ready ML systems."
+      content="Julie Zhu's personal portfolio for machine learning and GenAI roles, with a focus on evaluation, benchmarking, and production AI quality."
     >
-    <title>Julie Zhu | Portfolio</title>
+    <title>Julie Zhu | ML + GenAI Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
@@ -19,8 +19,16 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="bg-shapes" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <header class="site-header" data-header>
-      <nav class="nav" aria-label="Main navigation">
+      <nav class="nav glass" aria-label="Main navigation">
         <a class="brand" href="#top" aria-label="Julie Zhu home">
           <span class="brand-mark">JZ</span>
           <span>Julie Zhu</span>
@@ -30,143 +38,100 @@
           <span></span>
         </button>
         <div class="nav-links" data-nav-links>
-          <a href="#proof">Proof</a>
-          <a href="#projects">Projects</a>
+          <a href="#profile">Profile</a>
+          <a href="#skills">Skills</a>
           <a href="#career">Career</a>
           <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
           <a href="#life">Life</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-gloss"></div>
+      <section class="hero glass" id="top">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="assets/profile-photo.jpg" alt="Portrait of Julie Zhu">
+        </div>
         <div class="hero-content">
-          <p class="eyebrow">Machine learning engineer · GenAI evaluation · Bay Area</p>
-          <h1>ML + GenAI evaluation.</h1>
+          <p class="eyebrow">Machine Learning &middot; GenAI &middot; Bay Area</p>
+          <h1>UC Berkeley Data Science Masters Specializing in GenAI</h1>
           <p class="hero-copy">
-            I build benchmarks, datasets, and LLM-as-a-Judge workflows for Apple Intelligence model quality.
+            I evaluate Apple Intelligence features and build benchmarks, datasets, and LLM-as-a-Judge workflows for production AI quality.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="mailto:juliezhu212@berkeley.edu">Email Julie</a>
-            <a class="button secondary" href="#projects">Projects</a>
+          <div class="hero-meta" aria-label="Current focus">
+            <span>Apple Intelligence evaluation</span>
+            <span>ML / GenAI roles</span>
+            <span>Bay Area</span>
+          </div>
+          <div class="hero-actions" aria-label="Primary contact links">
+            <a class="button primary" href="mailto:juliezhu212@berkeley.edu">
+              <span class="link-icon" aria-hidden="true">@</span>
+              <span>Email</span>
+            </a>
+            <a class="button secondary" href="https://www.linkedin.com/in/julie-ai/" target="_blank" rel="noreferrer">
+              <span class="link-icon" aria-hidden="true">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="button secondary" href="https://github.com/juliezhu212" target="_blank" rel="noreferrer">
+              <span class="link-icon" aria-hidden="true">GH</span>
+              <span>GitHub</span>
+            </a>
           </div>
         </div>
-        <aside class="profile-card" aria-label="Profile summary">
-          <img src="assets/profile-photo.jpg" alt="Portrait of Julie Zhu">
-          <div>
-            <p class="profile-name">Julie Zhu</p>
-            <p>ML evaluation · GenAI · NLP · computer vision</p>
-          </div>
-        </aside>
       </section>
 
-      <section class="signal-strip" id="proof" aria-label="Professional proof points">
-        <article>
-          <span>01</span>
-          <h2>Model Evaluation</h2>
-          <p>Benchmarks and pipelines for multimodal AI quality.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>GenAI Systems</h2>
-          <p>LLM-as-a-Judge, datasets, and model behavior analysis.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h2>Error Analysis</h2>
-          <p>Failure modes, regressions, and quality gaps.</p>
-        </article>
+      <section class="section skills" id="skills" aria-label="Skills">
+        <div class="section-heading">
+          <h2>SKILLS</h2>
+        </div>
+        <div class="skill-bubbles" aria-label="Skill keywords">
+          <span>Model Evaluation</span>
+          <span>Benchmarking</span>
+          <span>LLM-as-a-Judge</span>
+          <span>GenAI</span>
+          <span>NLP</span>
+          <span>Computer Vision</span>
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Dataset Curation</span>
+          <span>Error Analysis</span>
+          <span>Data Visualization</span>
+          <span>Multimodal AI</span>
+        </div>
       </section>
 
-      <section class="section about">
-        <div class="section-kicker">Profile</div>
-        <div class="about-grid">
-          <div>
-            <h2>AI quality, measured.</h2>
+      <section class="section profile" id="profile">
+        <div class="section-heading">
+          <h2>PROFILE</h2>
+        </div>
+        <div class="profile-grid">
+          <article class="glass profile-summary">
             <p>
-              At Apple, I evaluate Apple Intelligence features including Image Generation, Writing Tools,
-              Math Notes, Smart Script, and Visual Intelligence. I’m seeking ML and GenAI engineering roles
-              in the Bay Area.
+              At Apple, I focus on model evaluation and benchmarking for Apple Intelligence features including Image Generation, Writing Tools, Math Notes, Smart Script, and Visual Intelligence.
             </p>
-          </div>
-          <div class="gloss-panel availability">
-            <p class="panel-label">Seeking</p>
+            <p>
+              I build scalable evaluation pipelines, curate high-quality datasets, implement LLM-as-a-Judge frameworks, and analyze model performance to support robust ML systems.
+            </p>
+          </article>
+          <aside class="glass seeking-panel">
+            <h3>Seeking</h3>
             <ul>
               <li>Machine Learning Engineer</li>
               <li>GenAI Engineer</li>
               <li>ML Evaluation Engineer</li>
               <li>LLM / Multimodal AI Engineer</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section projects" id="projects">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">Technical Systems</div>
-            <h2>Selected systems.</h2>
-          </div>
-          <a class="text-link" href="https://github.com/juliezhu212" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card feature-card">
-            <img src="assets/apple-campus.jpg" alt="Aerial view of Apple Park">
-            <div class="project-body">
-              <p class="tag">Apple Intelligence</p>
-              <h3>Model evaluation</h3>
-              <p>
-                Evaluation workflows for Apple Intelligence quality and regression detection.
-              </p>
-              <div class="chip-row">
-                <span>Benchmarking</span>
-                <span>GenAI</span>
-                <span>Multimodal ML</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <p class="tag">Evaluation Infrastructure</p>
-            <h3>Datasets and judges</h3>
-            <p>
-              Dataset curation, rubric-driven comparison, and LLM-as-a-Judge scoring.
-            </p>
-            <div class="chip-row">
-              <span>Python</span>
-              <span>LLM-as-a-Judge</span>
-              <span>Data Quality</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <p class="tag">Model Diagnostics</p>
-            <h3>Model diagnostics</h3>
-            <p>
-              Metrics, drift, quality gaps, and failure-mode analysis.
-            </p>
-            <div class="chip-row">
-              <span>Error Analysis</span>
-              <span>Metrics</span>
-              <span>Visualization</span>
-            </div>
-          </article>
+          </aside>
         </div>
       </section>
 
       <section class="section journey career-journey" id="career">
         <div class="section-heading">
-          <div>
-            <div class="section-kicker">Career Journey</div>
-            <h2>Career timeline.</h2>
-          </div>
+          <h2>CAREER JOURNEY</h2>
         </div>
-        <div class="compact-timeline">
+        <div class="timeline glass">
           <article class="timeline-entry">
             <div class="timeline-rail">
               <span class="timeline-dot current"></span>
@@ -175,9 +140,12 @@
             <div class="timeline-copy">
               <p class="tag">Current</p>
               <h3>Apple Intelligence evaluation</h3>
-              <div class="timeline-role">Image Generation · Writing Tools · Visual Intelligence</div>
-              <p>Turning model behavior into engineering signals for production GenAI quality.</p>
+              <div class="timeline-role">Image Generation &middot; Writing Tools &middot; Visual Intelligence</div>
+              <p>Turning model behavior into measurable quality signals for production GenAI features.</p>
             </div>
+            <figure class="timeline-media">
+              <img src="assets/apple-campus.jpg" alt="Apple Park campus">
+            </figure>
           </article>
           <article class="timeline-entry">
             <div class="timeline-rail">
@@ -185,10 +153,10 @@
               <span class="timeline-stem"></span>
             </div>
             <div class="timeline-copy">
-              <p class="tag">02 · Systems</p>
+              <p class="tag">Systems</p>
               <h3>Evaluation pipelines</h3>
-              <div class="timeline-role">Datasets · benchmarks · judges</div>
-              <p>Developed repeatable workflows for model comparison and quality measurement.</p>
+              <div class="timeline-role">Datasets &middot; benchmarks &middot; model judges</div>
+              <p>Developed repeatable workflows for model comparison, quality measurement, and regression analysis.</p>
             </div>
           </article>
           <article class="timeline-entry">
@@ -196,10 +164,10 @@
               <span class="timeline-dot"></span>
             </div>
             <div class="timeline-copy">
-              <p class="tag">01 · Foundation</p>
-              <h3>Data science and ML</h3>
-              <div class="timeline-role">UC Berkeley MIDS</div>
-              <p>Built a foundation in GenAI, NLP, computer vision, and data visualization.</p>
+              <p class="tag">Foundation</p>
+              <h3>Data science and machine learning</h3>
+              <div class="timeline-role">GenAI &middot; NLP &middot; CV &middot; visualization</div>
+              <p>Built the technical foundation for evaluation, modeling, and applied AI systems.</p>
             </div>
           </article>
         </div>
@@ -207,12 +175,9 @@
 
       <section class="section education" id="education">
         <div class="section-heading">
-          <div>
-            <div class="section-kicker">Education Journey</div>
-            <h2>Education timeline.</h2>
-          </div>
+          <h2>EDUCATION JOURNEY</h2>
         </div>
-        <div class="compact-timeline">
+        <div class="timeline glass">
           <article class="timeline-entry">
             <div class="timeline-rail">
               <span class="timeline-dot current"></span>
@@ -222,41 +187,77 @@
               <p class="tag">University of California, Berkeley</p>
               <h3>Master of Information and Data Science</h3>
               <div class="timeline-role">UC Berkeley School of Information</div>
-              <p>Applied data science and machine learning.</p>
+              <p>Specializing in Generative AI, Natural Language Processing, Computer Vision, and Data Visualization.</p>
             </div>
+            <figure class="timeline-media">
+              <img src="assets/uc_berkeley_campus.jpg" alt="UC Berkeley campus">
+            </figure>
           </article>
           <article class="timeline-entry">
             <div class="timeline-rail">
               <span class="timeline-dot"></span>
             </div>
             <div class="timeline-copy">
-              <p class="tag">Relevant Focus</p>
-              <h3>GenAI, NLP, CV, visualization</h3>
-              <div class="timeline-role">AI systems and visual analysis</div>
-              <p>Generative AI, language, vision, and data visualization.</p>
+              <p class="tag">Applied focus</p>
+              <h3>Data science for AI systems</h3>
+              <div class="timeline-role">Model behavior &middot; evaluation &middot; visual analysis</div>
+              <p>Coursework and projects centered on building, measuring, and communicating machine learning systems.</p>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading">
+          <h2>SELECTED SYSTEMS</h2>
+          <a class="text-link" href="https://github.com/juliezhu212" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">GH</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="project-grid">
+          <article class="project-card glass">
+            <img src="assets/apple-campus.jpg" alt="Apple Park campus">
+            <div>
+              <p class="tag">Apple Intelligence</p>
+              <h3>Model evaluation</h3>
+              <p>Evaluation workflows for feature quality, benchmark coverage, and regression detection.</p>
+            </div>
+          </article>
+          <article class="project-card glass">
+            <div class="project-icon-card">
+              <img src="assets/apple_logo.jpeg" alt="Apple logo">
+            </div>
+            <p class="tag">Evaluation infrastructure</p>
+            <h3>Datasets and judges</h3>
+            <p>Dataset curation, rubric-driven comparison, and LLM-as-a-Judge scoring.</p>
+          </article>
+          <article class="project-card glass">
+            <div class="project-icon-card">
+              <img src="assets/uc_berkeley_school_of_information_logo.jpeg" alt="UC Berkeley School of Information logo">
+            </div>
+            <p class="tag">Model diagnostics</p>
+            <h3>Error analysis</h3>
+            <p>Metrics, quality gaps, failure modes, and performance interpretation.</p>
           </article>
         </div>
       </section>
 
       <section class="section journey life-journey" id="life">
         <div class="section-heading">
-          <div>
-            <div class="section-kicker">Life Journey</div>
-            <h2>Bicultural perspective.</h2>
-          </div>
+          <h2>LIFE JOURNEY</h2>
         </div>
-        <div class="compact-timeline">
+        <div class="timeline glass">
           <article class="timeline-entry">
             <div class="timeline-rail">
               <span class="timeline-dot current"></span>
               <span class="timeline-stem"></span>
             </div>
             <div class="timeline-copy">
-              <p class="tag">Current context</p>
-              <h3>United States</h3>
-              <div class="timeline-role">Communication · collaboration</div>
-              <p>English communication and cross-cultural technical collaboration.</p>
+              <p class="tag">United States</p>
+              <h3>Technical collaboration in English</h3>
+              <div class="timeline-role">Communication &middot; product context &middot; team alignment</div>
+              <p>Working across technical and cultural contexts in US academic and industry environments.</p>
             </div>
           </article>
           <article class="timeline-entry">
@@ -264,96 +265,36 @@
               <span class="timeline-dot"></span>
             </div>
             <div class="timeline-copy">
-              <p class="tag">Early context</p>
-              <h3>China</h3>
-              <div class="timeline-role">Language · culture · local nuance</div>
-              <p>Chinese language, cultural expectations, and local technology context.</p>
+              <p class="tag">China</p>
+              <h3>Chinese language and cultural grounding</h3>
+              <div class="timeline-role">Local nuance &middot; bilingual perspective</div>
+              <p>Bringing bilingual communication and cross-cultural understanding to global ML teams.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section skills" id="skills" aria-label="Skills">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">Skills</div>
-            <h2>Core skills.</h2>
-          </div>
-        </div>
-        <div class="compact-timeline skill-flow">
-          <article class="timeline-entry">
-            <div class="timeline-rail">
-              <span class="timeline-dot current"></span>
-              <span class="timeline-stem"></span>
-            </div>
-            <div class="timeline-copy">
-              <p class="tag">Evaluation</p>
-              <h3>Model quality</h3>
-              <div class="timeline-role">Model evaluation · benchmark design · LLM-as-a-Judge · error analysis</div>
-            </div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-rail">
-              <span class="timeline-dot"></span>
-              <span class="timeline-stem"></span>
-            </div>
-            <div class="timeline-copy">
-              <p class="tag">GenAI</p>
-              <h3>GenAI systems</h3>
-              <div class="timeline-role">Generative AI · LLM evaluation · NLP · computer vision</div>
-            </div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-rail">
-              <span class="timeline-dot"></span>
-              <span class="timeline-stem"></span>
-            </div>
-            <div class="timeline-copy">
-              <p class="tag">Data</p>
-              <h3>Data systems</h3>
-              <div class="timeline-role">Python · SQL · dataset curation · data quality checks</div>
-            </div>
-          </article>
-          <article class="timeline-entry">
-            <div class="timeline-rail">
-              <span class="timeline-dot"></span>
-            </div>
-            <div class="timeline-copy">
-              <p class="tag">Analysis</p>
-              <h3>Analysis</h3>
-              <div class="timeline-role">Performance analysis · metric interpretation · failure-mode synthesis · visualization</div>
-            </div>
-          </article>
-        </div>
-        <div class="skill-cloud" aria-label="Skill keywords">
-          <span>Benchmarking</span>
-          <span>Multimodal AI</span>
-          <span>Rubric Design</span>
-          <span>Model Diagnostics</span>
-          <span>Evaluation Pipelines</span>
-          <span>Apple Intelligence</span>
-          <span>Writing Tools</span>
-          <span>Image Generation</span>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
+      <section class="contact glass" id="contact">
         <div>
-          <p class="section-kicker">Contact for ML / GenAI Jobs</p>
-          <h2>Hiring for ML or GenAI?</h2>
-          <p>
-            I’m looking for Bay Area roles in model evaluation, GenAI benchmarks, and ML infrastructure.
-          </p>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Open to ML and GenAI opportunities in the Bay Area.</h2>
+          <p>Best fit: model evaluation, GenAI benchmarks, multimodal AI, and ML infrastructure.</p>
         </div>
         <div class="contact-actions">
-          <a class="button primary" href="mailto:juliezhu212@berkeley.edu">juliezhu212@berkeley.edu</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/julie-ai/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button primary" href="mailto:juliezhu212@berkeley.edu">
+            <span class="link-icon" aria-hidden="true">@</span>
+            <span>Email</span>
+          </a>
+          <a class="button secondary" href="https://www.linkedin.com/in/julie-ai/" target="_blank" rel="noreferrer">
+            <span class="link-icon" aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span data-year></span> Julie Zhu</p>
+      <p>&copy; <span data-year></span> Julie Zhu</p>
       <a href="#top">Back to top</a>
     </footer>
 
