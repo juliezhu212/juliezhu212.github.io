@@ -590,17 +590,29 @@ main,
 
 .timeline {
   display: grid;
-  gap: 0;
+  gap: 24px;
+  position: relative;
+}
+
+.timeline::after {
+  background: rgba(255, 45, 149, 0.16);
+  bottom: 30px;
+  content: "";
+  left: 33px;
+  position: absolute;
+  top: 38px;
+  width: 1px;
 }
 
 .timeline-entry {
   display: grid;
   gap: 18px;
   grid-template-columns: 18px minmax(0, 1fr) minmax(180px, 280px);
+  position: relative;
 }
 
 .timeline-entry + .timeline-entry {
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .timeline-entry:not(:has(.timeline-media)) {
@@ -611,7 +623,8 @@ main,
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 8px;
+  padding-top: 7px;
+  z-index: 2;
 }
 
 .timeline-dot {
@@ -629,7 +642,7 @@ main,
 }
 
 .timeline-stem {
-  background: rgba(255, 45, 149, 0.18);
+  display: none;
   flex: 1;
   margin-top: 7px;
   min-height: 76px;
