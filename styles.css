@@ -514,13 +514,36 @@ main,
 }
 
 .skill-bubbles span {
+  align-items: center;
   animation: bubbleFloat 7s ease-in-out infinite;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.42)),
     rgba(255, 197, 228, 0.44);
+  display: inline-flex;
+  gap: 10px;
   font-size: clamp(0.98rem, 1.4vw, 1.12rem);
   min-height: 54px;
-  padding: 14px 20px;
+  padding: 12px 18px 12px 12px;
+}
+
+.skill-bubbles span::before {
+  align-items: center;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0)),
+    linear-gradient(135deg, var(--hot-pink), var(--violet));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(255, 45, 149, 0.18);
+  color: #fff;
+  content: attr(data-icon);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 800;
+  height: 30px;
+  justify-content: center;
+  line-height: 1;
+  width: 30px;
 }
 
 .skill-bubbles span:nth-child(2n) {
