@@ -18,6 +18,8 @@
   --lime: #ffc2dc;
   --shadow: 0 24px 80px rgba(93, 12, 57, 0.14);
   --glass-shadow: inset 0 1px 0 var(--glass-edge), inset 0 -28px 60px rgba(255, 214, 232, 0.3), 0 24px 80px rgba(93, 12, 57, 0.12);
+  --glass-fill: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.36) 48%, rgba(255, 255, 255, 0.5)), rgba(255, 255, 255, 0.4);
+  --glass-sheen: linear-gradient(90deg, rgba(255, 255, 255, 0.78), transparent 36%), linear-gradient(180deg, rgba(255, 255, 255, 0.58), transparent 42%);
   --radius: 8px;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
@@ -30,6 +32,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 79, 163, 0.24);
 }
 
 body {
@@ -63,6 +69,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(255, 47, 146, 0.46);
+  outline-offset: 4px;
 }
 
 .skip-link {
@@ -116,6 +127,7 @@ a {
 .brand {
   gap: 10px;
   font-weight: 800;
+  min-height: 42px;
 }
 
 .brand-mark {
@@ -150,7 +162,9 @@ a {
   color: #2b373d;
   font-size: 0.91rem;
   font-weight: 700;
+  line-height: 1;
   padding: 10px 14px;
+  transition: background 170ms ease, box-shadow 170ms ease, color 170ms ease;
 }
 
 .nav-links a:hover,
@@ -283,6 +297,11 @@ a {
   transition: transform 170ms ease, box-shadow 170ms ease;
 }
 
+.button > * {
+  position: relative;
+  z-index: 1;
+}
+
 .button::after {
   background:
     linear-gradient(120deg, transparent 12%, rgba(255, 255, 255, 0.78) 28%, transparent 46%),
@@ -296,6 +315,10 @@ a {
 
 .button:hover {
   transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
 }
 
 .button.primary {
@@ -389,9 +412,7 @@ a {
 .education-card,
 .timeline,
 .contact {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.32) 48%, rgba(255, 255, 255, 0.46)),
-    rgba(255, 255, 255, 0.36);
+  background: var(--glass-fill);
   border: 1px solid var(--glass-edge);
   border-radius: var(--radius);
   box-shadow: var(--glass-shadow);
@@ -405,9 +426,7 @@ a {
 .education-card::before,
 .timeline::before,
 .contact::before {
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.78), transparent 36%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.58), transparent 42%);
+  background: var(--glass-sheen);
   border-radius: inherit;
   content: "";
   inset: 0;
@@ -428,6 +447,14 @@ a {
 
 .signal-strip article {
   padding: 24px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.signal-strip article:hover,
+.project-card:hover,
+.education-card:hover {
+  box-shadow: var(--glass-shadow), 0 28px 90px rgba(255, 47, 146, 0.12);
+  transform: translateY(-3px);
 }
 
 .signal-strip span {
@@ -461,6 +488,10 @@ a {
   gap: 24px;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
   margin-top: 18px;
+}
+
+.about p {
+  max-width: 760px;
 }
 
 .about h2,
@@ -515,6 +546,7 @@ a {
   min-height: 360px;
   overflow: hidden;
   padding: 24px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .feature-card {
@@ -524,6 +556,7 @@ a {
 .feature-card img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 
@@ -618,6 +651,7 @@ a {
   padding: 26px;
   position: relative;
   overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .education-card::after {
@@ -707,7 +741,9 @@ a {
     border-radius: var(--radius);
     display: none;
     flex-direction: column;
+    gap: 4px;
     left: 24px;
+    padding: 8px;
     position: absolute;
     right: 24px;
     top: 72px;
@@ -727,7 +763,11 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 14vw, 5.2rem);
+    font-size: clamp(3rem, 12vw, 5.2rem);
+  }
+
+  .hero-copy {
+    max-width: 720px;
   }
 
   .profile-card {
@@ -768,6 +808,15 @@ a {
     padding-bottom: 44px;
   }
 
+  .hero h1 {
+    font-size: clamp(2.75rem, 13vw, 4.1rem);
+    line-height: 1;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
   .hero-actions,
   .contact-actions {
     flex-direction: column;
@@ -779,6 +828,7 @@ a {
 
   .profile-card {
     grid-template-columns: 72px 1fr;
+    padding: 12px;
   }
 
   .profile-card img {
@@ -790,8 +840,24 @@ a {
     padding-top: 70px;
   }
 
+  .signal-strip article,
+  .gloss-panel,
+  .project-card,
+  .education-card,
+  .timeline,
+  .contact {
+    backdrop-filter: blur(20px) saturate(1.35);
+  }
+
   .project-card {
     min-height: auto;
+  }
+
+  .project-body,
+  .timeline,
+  .education-card,
+  .availability {
+    padding: 20px;
   }
 
   .contact {
@@ -800,5 +866,52 @@ a {
     padding-bottom: 28px;
     padding-top: 28px;
     width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  body::before,
+  .hero-bg,
+  .hero-gloss,
+  .site-header,
+  .footer {
+    display: none;
+  }
+
+  .hero,
+  .section,
+  .signal-strip,
+  .contact {
+    padding: 24px 0;
+  }
+
+  .signal-strip,
+  .about-grid,
+  .project-grid,
+  .education-grid {
+    display: block;
+  }
+
+  .signal-strip article,
+  .gloss-panel,
+  .project-card,
+  .education-card,
+  .timeline,
+  .contact {
+    box-shadow: none;
+    break-inside: avoid;
   }
 }
