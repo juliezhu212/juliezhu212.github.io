@@ -530,6 +530,7 @@ main,
 .profile-summary,
 .seeking-panel,
 .project-card,
+.life-card,
 .timeline,
 .contact {
   padding: 28px;
@@ -537,6 +538,7 @@ main,
 
 .profile-summary p,
 .project-card p,
+.life-card p,
 .timeline-copy p,
 .contact p {
   color: var(--muted);
@@ -549,6 +551,7 @@ main,
 
 .seeking-panel h3,
 .project-card h3,
+.life-card h3,
 .timeline-copy h3 {
   color: var(--ink);
   font-size: 1.22rem;
@@ -652,6 +655,36 @@ main,
   min-height: 320px;
 }
 
+.life-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.life-card {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 22px 1fr;
+  min-height: 230px;
+}
+
+.life-marker {
+  background: var(--pink);
+  border: 2px solid rgba(255, 255, 255, 0.96);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 45, 149, 0.35), 0 0 28px rgba(255, 91, 180, 0.42);
+  height: 12px;
+  margin-top: 8px;
+  width: 12px;
+}
+
+.life-role {
+  color: var(--soft);
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 .project-icon-card {
   align-items: center;
   background: rgba(255, 255, 255, 0.58);
@@ -751,6 +784,7 @@ main,
 
   .hero,
   .profile-grid,
+  .life-grid,
   .project-grid,
   .timeline-entry,
   .timeline-entry:not(:has(.timeline-media)) {
@@ -820,6 +854,7 @@ main,
   .profile-summary,
   .seeking-panel,
   .project-card,
+  .life-card,
   .timeline,
   .contact {
     padding: 22px;
