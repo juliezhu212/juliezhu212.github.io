@@ -187,19 +187,12 @@ a {
   position: relative;
 }
 
-.hero-bg {
-  height: 100%;
-  inset: 0;
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  z-index: -3;
-}
-
 .hero::before {
   background:
-    linear-gradient(90deg, rgba(255, 248, 251, 0.98) 0%, rgba(255, 248, 251, 0.74) 46%, rgba(255, 248, 251, 0.16) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.22));
+    radial-gradient(840px 520px at 78% 22%, rgba(255, 79, 163, 0.2), transparent 62%),
+    radial-gradient(680px 460px at 88% 72%, rgba(141, 107, 255, 0.12), transparent 58%),
+    linear-gradient(90deg, rgba(255, 248, 251, 0.98) 0%, rgba(255, 248, 251, 0.82) 48%, rgba(255, 248, 251, 0.5) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 236, 245, 0.7));
   content: "";
   inset: 0;
   position: absolute;
@@ -954,7 +947,6 @@ a {
   }
 
   body::before,
-  .hero-bg,
   .hero-gloss,
   .site-header,
   .footer {
