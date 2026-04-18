@@ -2,7 +2,7 @@
   --ink: #161018;
   --muted: #6b5966;
   --soft: #8a7583;
-  --paper: #fff7fc;
+  --paper: #ffd8ef;
   --pink: #ff5bb4;
   --hot-pink: #ff2d95;
   --rose: #b5166f;
@@ -32,10 +32,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(820px 560px at 82% 10%, rgba(255, 45, 149, 0.42), transparent 58%),
-    radial-gradient(760px 560px at 8% 24%, rgba(255, 116, 191, 0.58), transparent 62%),
-    radial-gradient(820px 620px at 78% 78%, rgba(141, 107, 255, 0.38), transparent 60%),
-    linear-gradient(135deg, #fff9fd 0%, #ffd6ec 24%, #f3d9ff 58%, #ffffff 100%);
+    radial-gradient(820px 560px at 82% 10%, rgba(255, 45, 149, 0.36), transparent 58%),
+    radial-gradient(760px 560px at 8% 24%, rgba(255, 116, 191, 0.42), transparent 62%),
+    radial-gradient(820px 620px at 78% 78%, rgba(141, 107, 255, 0.34), transparent 60%),
+    linear-gradient(135deg, #ffc6e4 0%, #ff8fca 28%, #d7b7ff 62%, #f3a3d2 100%);
   color: var(--ink);
   font-size: 17px;
   line-height: 1.65;
@@ -45,9 +45,9 @@ body {
 
 body::before {
   background:
-    linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.38) 38%, transparent 52%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.3), transparent 42%),
-    linear-gradient(90deg, rgba(255, 45, 149, 0.12), transparent 34%, rgba(141, 107, 255, 0.12));
+    linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.24) 38%, transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 42%),
+    linear-gradient(90deg, rgba(255, 45, 149, 0.14), transparent 34%, rgba(141, 107, 255, 0.14));
   content: "";
   inset: 0;
   opacity: 0.7;
