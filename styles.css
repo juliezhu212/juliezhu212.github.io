@@ -946,9 +946,10 @@ main,
 }
 
 .contact h2 {
-  color: var(--california-gold);
+  color: var(--berkeley-blue);
   font-size: clamp(1.45rem, 2.2vw, 2.25rem);
   max-width: 720px;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.28);
 }
 
 .contact p:not(.eyebrow) {
