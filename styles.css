@@ -584,20 +584,15 @@ main,
 }
 
 .career-company {
-  color: var(--california-gold);
-  font-size: clamp(1.22rem, 2vw, 1.48rem);
-  font-weight: 900;
-}
-
-.career-separator {
-  color: var(--soft);
+  color: var(--ink);
+  font-size: clamp(1.08rem, 1.5vw, 1.24rem);
   font-weight: 800;
 }
 
 .career-role-title {
-  color: var(--ink);
-  font-size: clamp(1.08rem, 1.5vw, 1.24rem);
-  font-weight: 800;
+  color: var(--california-gold);
+  font-size: clamp(1.22rem, 2vw, 1.48rem);
+  font-weight: 900;
 }
 
 .education-school {
