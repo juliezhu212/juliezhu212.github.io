@@ -372,7 +372,6 @@ main,
 }
 
 .hero-meta span,
-.skill-bubbles span,
 .chip-row span {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.24);
@@ -498,54 +497,30 @@ main,
 
 .skill-groups {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  grid-template-columns: 1fr;
 }
 
 .skill-group {
-  padding: 24px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(180px, 0.28fr) minmax(0, 1fr);
+  padding: 20px 24px;
 }
 
 .skill-group h3 {
   color: var(--ink);
   font-size: 1.12rem;
   line-height: 1.3;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
-.skill-bubbles {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.skill-bubbles span {
-  animation: bubbleFloat 7s ease-in-out infinite;
-  background: rgba(255, 255, 255, 0.12);
-  display: inline-block;
-  font-size: clamp(0.98rem, 1.4vw, 1.12rem);
-  min-height: 54px;
-  padding: 12px 18px;
-}
-
-.skill-bubbles span:nth-child(2n) {
-  animation-delay: 0.8s;
-}
-
-.skill-bubbles span:nth-child(3n) {
-  animation-delay: 1.6s;
-}
-
-@keyframes bubbleFloat {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+.skill-group p {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.8;
+  margin: 0;
 }
 
 .profile-grid {
@@ -996,15 +971,6 @@ main,
   .timeline,
   .contact {
     padding: 22px;
-  }
-
-  .skill-bubbles {
-    min-height: 0;
-  }
-
-  .skill-bubbles span {
-    min-height: 46px;
-    padding: 11px 14px;
   }
 
   .footer {
