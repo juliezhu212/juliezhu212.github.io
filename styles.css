@@ -680,6 +680,19 @@ main,
   margin-bottom: 8px;
 }
 
+.project-detail-list {
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+  line-height: 1.62;
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+.project-detail-list li::marker {
+  color: var(--california-gold);
+}
+
 .timeline-media {
   align-self: start;
   margin: 0;
