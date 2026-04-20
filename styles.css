@@ -1,15 +1,15 @@
 :root {
-  --ink: #071526;
-  --muted: #162338;
-  --soft: #273b5f;
-  --paper: #fdb515;
+  --ink: #ffffff;
+  --muted: rgba(255, 255, 255, 0.84);
+  --soft: rgba(255, 255, 255, 0.72);
+  --paper: #071021;
   --california-gold: #fdb515;
   --berkeley-blue: #002676;
-  --glass: rgba(255, 255, 255, 0.26);
-  --glass-hover: rgba(255, 255, 255, 0.42);
-  --glass-edge: rgba(255, 255, 255, 0.58);
-  --line: rgba(0, 38, 118, 0.14);
-  --shadow: 0 26px 90px rgba(0, 38, 118, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.82);
+  --glass: rgba(255, 255, 255, 0.14);
+  --glass-hover: rgba(255, 255, 255, 0.2);
+  --glass-edge: rgba(255, 255, 255, 0.22);
+  --line: rgba(255, 255, 255, 0.16);
+  --shadow: 0 18px 52px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.18);
   --radius: 8px;
   font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
@@ -29,10 +29,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(820px 560px at 82% 10%, rgba(253, 181, 21, 0.46), transparent 58%),
-    radial-gradient(760px 560px at 8% 24%, rgba(0, 38, 118, 0.48), transparent 62%),
-    radial-gradient(820px 620px at 78% 78%, rgba(253, 181, 21, 0.34), transparent 60%),
-    linear-gradient(135deg, #002676 0%, #0a3a8c 30%, #fdb515 70%, #ffd76a 100%);
+    radial-gradient(820px 560px at 82% 8%, rgba(253, 181, 21, 0.26), transparent 58%),
+    radial-gradient(760px 560px at 8% 24%, rgba(0, 38, 118, 0.82), transparent 62%),
+    radial-gradient(820px 620px at 78% 78%, rgba(253, 181, 21, 0.18), transparent 60%),
+    linear-gradient(135deg, #06070d 0%, #10182f 16%, #002676 42%, #3e356d 68%, #7d5d35 86%, #a46e20 100%);
   color: var(--ink);
   font-size: 17px;
   line-height: 1.65;
@@ -42,9 +42,9 @@ body {
 
 body::before {
   background:
-    linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.24) 38%, transparent 52%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 42%),
-    linear-gradient(90deg, rgba(253, 181, 21, 0.16), transparent 34%, rgba(0, 38, 118, 0.16));
+    linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.08) 38%, transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 42%),
+    linear-gradient(90deg, rgba(253, 181, 21, 0.08), transparent 34%, rgba(0, 38, 118, 0.18));
   content: "";
   inset: 0;
   opacity: 0.7;
@@ -96,7 +96,7 @@ a {
   animation: float 8s ease-in-out infinite;
   background: rgba(255, 255, 255, 0.24);
   border: 1px solid rgba(255, 255, 255, 0.42);
-  box-shadow: 0 20px 70px rgba(0, 38, 118, 0.18);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
   display: block;
   position: absolute;
 }
@@ -159,9 +159,7 @@ a {
 
 .glass,
 .skip-link {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.12) 52%, rgba(255, 255, 255, 0.22)),
-    var(--glass);
+  background: var(--glass);
   border: 1px solid var(--glass-edge);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -173,12 +171,12 @@ a {
 .glass::before,
 .skip-link::before {
   background:
-    linear-gradient(110deg, transparent 12%, rgba(255, 255, 255, 0.62) 28%, transparent 46%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 44%);
+    linear-gradient(110deg, transparent 12%, rgba(255, 255, 255, 0.2) 28%, transparent 46%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 44%);
   border-radius: inherit;
   content: "";
   inset: 0;
-  opacity: 0.7;
+  opacity: 0.55;
   pointer-events: none;
   position: absolute;
 }
@@ -198,7 +196,7 @@ a {
 
 .nav {
   align-items: center;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.14);
   display: flex;
   gap: 28px;
   justify-content: space-between;
@@ -210,7 +208,7 @@ a {
 }
 
 .nav.glass {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .nav.glass::before {
@@ -218,7 +216,7 @@ a {
 }
 
 .site-header.is-scrolled .nav {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .brand {
@@ -233,11 +231,11 @@ a {
 .brand-mark {
   align-items: center;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)),
-    rgba(0, 38, 118, 0.62);
-  border: 1px solid rgba(255, 255, 255, 0.86);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04)),
+    rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 12px 30px rgba(0, 38, 118, 0.24);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34), 0 10px 28px rgba(0, 0, 0, 0.18);
   color: #fdb515;
   display: inline-flex;
   height: 46px;
@@ -259,7 +257,7 @@ a {
   border-bottom-color: rgba(255, 255, 255, 0.2);
   border-radius: var(--radius);
   box-shadow: none;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.92rem;
   font-weight: 700;
   line-height: 1;
@@ -283,10 +281,10 @@ a {
 
 .nav-links a:hover,
 .nav-links a.is-active {
-  background: rgba(255, 255, 255, 0.055);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24);
-  color: var(--ink);
-  text-shadow: none;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.24), 0 10px 28px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.34);
   transform: translateY(-1px);
 }
 
@@ -313,12 +311,10 @@ main,
 }
 
 .hero-photo-wrap {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.34)),
-    rgba(255, 255, 255, 0.48);
-  border: 1px solid rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: var(--radius);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.96), 0 24px 60px rgba(0, 38, 118, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 18px 52px rgba(0, 0, 0, 0.2);
   padding: 14px;
 }
 
@@ -332,7 +328,7 @@ main,
 
 .eyebrow,
 .tag {
-  color: var(--berkeley-blue);
+  color: var(--california-gold);
   font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -347,7 +343,7 @@ main,
   letter-spacing: 0;
   line-height: 1.12;
   margin: 0;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.46);
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.24);
 }
 
 .hero h1 {
@@ -373,12 +369,10 @@ main,
 .hero-meta span,
 .skill-bubbles span,
 .chip-row span {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)),
-    rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 999px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.84), 0 12px 30px rgba(0, 38, 118, 0.13);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 8px 28px rgba(0, 0, 0, 0.12);
   color: var(--ink);
   display: inline-flex;
   font-size: 0.94rem;
@@ -411,30 +405,24 @@ main,
 }
 
 .button.primary {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0.08)),
-    rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86), 0 16px 40px rgba(0, 38, 118, 0.18);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 12px 34px rgba(0, 0, 0, 0.14);
   color: var(--ink);
 }
 
 .button.secondary,
 .text-link {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.08)),
-    rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
   color: var(--ink);
 }
 
 .button:hover,
 .text-link:hover {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.12)),
-    rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 18px 44px rgba(0, 38, 118, 0.14);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.44);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
@@ -529,9 +517,7 @@ main,
 
 .skill-bubbles span {
   animation: bubbleFloat 7s ease-in-out infinite;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.42)),
-    rgba(253, 181, 21, 0.32);
+  background: rgba(255, 255, 255, 0.12);
   display: inline-block;
   font-size: clamp(0.98rem, 1.4vw, 1.12rem);
   min-height: 54px;
@@ -628,7 +614,7 @@ main,
 }
 
 .timeline::after {
-  background: rgba(0, 38, 118, 0.18);
+  background: rgba(255, 255, 255, 0.18);
   bottom: 30px;
   content: "";
   left: 33px;
@@ -664,7 +650,7 @@ main,
   background: rgba(253, 181, 21, 0.72);
   border: 2px solid rgba(255, 255, 255, 0.96);
   border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(0, 38, 118, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28);
   height: 11px;
   width: 11px;
 }
@@ -732,7 +718,7 @@ main,
   background: var(--california-gold);
   border: 2px solid rgba(255, 255, 255, 0.96);
   border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(0, 38, 118, 0.35), 0 0 28px rgba(253, 181, 21, 0.42);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28), 0 0 28px rgba(253, 181, 21, 0.42);
   height: 12px;
   margin-top: 8px;
   width: 12px;
@@ -747,8 +733,8 @@ main,
 
 .project-icon-card {
   align-items: center;
-  background: rgba(255, 255, 255, 0.58);
-  border: 1px solid rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius);
   display: flex;
   height: 86px;
@@ -806,8 +792,8 @@ main,
 
   .nav-toggle {
     align-items: center;
-    background: rgba(255, 255, 255, 0.68);
-    border: 1px solid rgba(255, 255, 255, 0.84);
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: var(--radius);
     display: grid;
     gap: 5px;
@@ -825,8 +811,8 @@ main,
 
   .nav-links {
     align-items: stretch;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.86);
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: var(--radius);
     display: none;
     flex-direction: column;
