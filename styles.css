@@ -569,14 +569,13 @@ main,
 .project-card h3,
 .life-card h3,
 .timeline-copy h3 {
-  color: var(--ink);
+  color: var(--california-gold);
   font-size: 1.22rem;
   line-height: 1.3;
   margin: 0 0 10px;
 }
 
-.timeline-copy h3.career-title,
-.timeline-copy h3.education-title {
+.timeline-copy h3.career-title {
   align-items: baseline;
   color: var(--ink);
   display: flex;
@@ -584,12 +583,7 @@ main,
   gap: 8px;
 }
 
-.timeline-copy h3.education-title {
-  font-size: clamp(1.26rem, 2vw, 1.48rem);
-}
-
-.career-company,
-.education-school {
+.career-company {
   color: var(--california-gold);
   font-weight: 900;
 }
@@ -599,10 +593,15 @@ main,
   font-weight: 800;
 }
 
-.career-role-title,
-.education-degree {
+.career-role-title {
   color: var(--ink);
   font-weight: 800;
+}
+
+.education-school-line {
+  color: var(--ink);
+  font-size: 1.06rem;
+  font-weight: 850;
 }
 
 .seeking-panel ul {
