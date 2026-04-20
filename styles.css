@@ -575,6 +575,28 @@ main,
   margin: 0 0 10px;
 }
 
+.career-title {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.career-company {
+  color: var(--california-gold);
+  font-weight: 800;
+}
+
+.career-separator {
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.career-role-title {
+  color: var(--ink);
+  font-weight: 800;
+}
+
 .seeking-panel ul {
   display: grid;
   gap: 12px;
