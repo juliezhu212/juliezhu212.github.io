@@ -680,6 +680,13 @@ main,
   margin-bottom: 8px;
 }
 
+.project-date {
+  color: var(--california-gold);
+  font-size: 0.98rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
 .project-detail-list {
   color: var(--muted);
   display: grid;
