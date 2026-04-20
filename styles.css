@@ -680,6 +680,14 @@ main,
   margin-bottom: 8px;
 }
 
+.company-name {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: -2px 0 6px;
+}
+
 .project-date {
   color: var(--california-gold);
   font-size: 0.98rem;
