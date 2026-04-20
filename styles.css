@@ -700,6 +700,28 @@ main,
   color: var(--california-gold);
 }
 
+.project-link {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: var(--radius);
+  color: var(--ink);
+  display: inline-flex;
+  font-size: 0.96rem;
+  font-weight: 800;
+  margin-top: 18px;
+  min-height: 44px;
+  overflow: hidden;
+  padding: 0 16px;
+  position: relative;
+  backdrop-filter: blur(18px) saturate(1.35);
+}
+
+.project-link:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.44);
+}
+
 .timeline-media {
   align-self: start;
   margin: 0;
