@@ -326,6 +326,31 @@ main,
   width: 100%;
 }
 
+.hero-nameplate {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  gap: 3px;
+  margin-top: 14px;
+  padding: 14px 6px 2px;
+  text-align: center;
+}
+
+.hero-nameplate span {
+  color: var(--ink);
+  font-size: clamp(1.24rem, 2vw, 1.58rem);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.hero-nameplate small {
+  color: var(--california-gold);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
 .eyebrow,
 .tag {
   color: var(--california-gold);
@@ -540,7 +565,7 @@ main,
 .profile-grid {
   display: grid;
   gap: 22px;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  grid-template-columns: 1fr;
 }
 
 .profile-summary,
@@ -565,6 +590,43 @@ main,
   margin-top: 14px;
 }
 
+.profile-summary h3 {
+  color: var(--california-gold);
+  font-size: 1.28rem;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.profile-highlights {
+  color: var(--muted);
+  display: grid;
+  gap: 12px;
+  line-height: 1.62;
+  margin: 18px 0 0;
+  padding-left: 20px;
+}
+
+.profile-highlights li::marker {
+  color: var(--california-gold);
+}
+
+.profile-highlights strong {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.profile-summary .profile-seeking {
+  color: var(--ink);
+  font-weight: 750;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+.profile-summary .profile-seeking strong {
+  color: var(--california-gold);
+  font-weight: 900;
+}
+
 .seeking-panel h3,
 .project-card h3,
 .life-card h3,
@@ -573,6 +635,10 @@ main,
   font-size: 1.22rem;
   line-height: 1.3;
   margin: 0 0 10px;
+}
+
+.seeking-panel h3:not(:first-child) {
+  margin-top: 24px;
 }
 
 .timeline-copy h3.career-title-stack,
