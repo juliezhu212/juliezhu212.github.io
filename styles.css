@@ -700,6 +700,13 @@ main,
   color: var(--california-gold);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
 .project-link {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
@@ -709,7 +716,7 @@ main,
   display: inline-flex;
   font-size: 0.96rem;
   font-weight: 800;
-  margin-top: 18px;
+  margin-top: 0;
   min-height: 44px;
   overflow: hidden;
   padding: 0 16px;
