@@ -231,11 +231,11 @@ a {
 .brand-mark {
   align-items: center;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04)),
-    rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.08) 44%, rgba(0, 38, 118, 0.06)),
+    rgba(0, 38, 118, 0.82);
+  border: 1px solid rgba(253, 181, 21, 0.46);
   border-radius: 50%;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34), 0 10px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.36), 0 10px 28px rgba(0, 38, 118, 0.3);
   color: #fdb515;
   display: inline-flex;
   height: 46px;
