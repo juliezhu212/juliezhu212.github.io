@@ -575,26 +575,33 @@ main,
   margin: 0 0 10px;
 }
 
-.career-title {
+.timeline-copy h3.career-title,
+.timeline-copy h3.education-title {
   align-items: baseline;
-  color: var(--california-gold);
+  color: var(--ink);
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.career-company {
+.timeline-copy h3.education-title {
+  font-size: clamp(1.26rem, 2vw, 1.48rem);
+}
+
+.career-company,
+.education-school {
+  color: var(--california-gold);
   font-weight: 900;
 }
 
 .career-separator {
-  color: currentColor;
+  color: var(--soft);
   font-weight: 800;
-  opacity: 0.72;
 }
 
-.career-role-title {
-  color: currentColor;
+.career-role-title,
+.education-degree {
+  color: var(--ink);
   font-weight: 800;
 }
 
