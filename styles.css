@@ -364,6 +364,20 @@ main,
   max-width: 720px;
 }
 
+.hero-focus {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 16px 0 0;
+  max-width: 720px;
+}
+
+.hero-focus strong {
+  color: var(--california-gold);
+  font-weight: 800;
+}
+
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
