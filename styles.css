@@ -575,14 +575,7 @@ main,
   margin: 0 0 10px;
 }
 
-.timeline-copy h3.career-title {
-  align-items: baseline;
-  color: var(--ink);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
+.timeline-copy h3.career-title-stack,
 .timeline-copy h3.education-title-stack {
   color: var(--ink);
   display: grid;
@@ -592,6 +585,7 @@ main,
 
 .career-company {
   color: var(--california-gold);
+  font-size: clamp(1.22rem, 2vw, 1.48rem);
   font-weight: 900;
 }
 
@@ -602,6 +596,7 @@ main,
 
 .career-role-title {
   color: var(--ink);
+  font-size: clamp(1.08rem, 1.5vw, 1.24rem);
   font-weight: 800;
 }
 
