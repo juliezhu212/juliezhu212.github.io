@@ -577,23 +577,24 @@ main,
 
 .career-title {
   align-items: baseline;
+  color: var(--california-gold);
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
 .career-company {
-  color: var(--california-gold);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .career-separator {
-  color: var(--soft);
-  font-weight: 700;
+  color: currentColor;
+  font-weight: 800;
+  opacity: 0.72;
 }
 
 .career-role-title {
-  color: var(--ink);
+  color: currentColor;
   font-weight: 800;
 }
 
