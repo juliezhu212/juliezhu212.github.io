@@ -540,11 +540,24 @@ main,
   grid-template-columns: 1fr;
 }
 
+.education-groups {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
 .skill-group {
   display: grid;
   gap: 18px;
   grid-template-columns: minmax(180px, 0.28fr) minmax(0, 1fr);
   padding: 20px 24px;
+}
+
+.education-card {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+  padding: 28px;
 }
 
 .skill-group h3 {
@@ -726,52 +739,65 @@ main,
   grid-template-columns: 18px minmax(0, 1fr);
 }
 
-.education-timeline .timeline-entry {
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
-}
-
-.education-timeline .timeline-entry + .timeline-entry {
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  margin-top: 4px;
-  padding-top: 26px;
-}
-
-.education-timeline .timeline-copy {
+.education-card .timeline-copy {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
-.education-timeline .project-date {
-  align-items: center;
-  background: rgba(253, 181, 21, 0.1);
-  border: 1px solid rgba(253, 181, 21, 0.26);
-  border-radius: 999px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  display: inline-flex;
-  justify-self: start;
+.education-card .education-card-section {
+  display: grid;
+}
+
+.education-card .education-card-meta {
+  gap: 2px;
+}
+
+.education-card .education-card-details {
+  gap: 2px;
+}
+
+.education-card .project-date {
+  color: var(--soft);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.3;
   margin: 0;
-  padding: 6px 12px;
 }
 
-.education-timeline .education-title-stack {
+.education-card .education-title-stack {
   gap: 6px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
-.education-timeline .education-school {
+.education-card .education-school {
+  font-size: clamp(1.28rem, 2.1vw, 1.54rem);
   line-height: 1.2;
 }
 
-.education-timeline .education-degree {
-  color: rgba(255, 255, 255, 0.92);
+.education-card .education-degree {
+  color: var(--california-gold);
+  font-size: clamp(1.12rem, 1.6vw, 1.28rem);
   line-height: 1.3;
 }
 
-.education-timeline .education-school-line {
-  color: var(--california-gold);
-  font-size: 0.96rem;
+.education-card .education-school-line {
+  color: var(--ink);
+  font-size: 1.02rem;
+  font-weight: 850;
+  line-height: 1.3;
   letter-spacing: 0.01em;
-  margin-bottom: 2px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.education-card .timeline-copy p + .project-detail-list {
+  margin-top: -2px;
+}
+
+.education-card .project-detail-list {
+  font-size: 1.02rem;
+  gap: 6px;
+  line-height: 1.58;
 }
 
 .timeline-rail {
@@ -1061,9 +1087,11 @@ main,
   .hero,
   .profile-grid,
   .skill-groups,
+  .education-groups,
   .life-grid,
   .project-grid,
   .apple-focus,
+  .education-card,
   .timeline-entry,
   .timeline-entry:not(:has(.timeline-media)) {
     grid-template-columns: 1fr;
