@@ -726,6 +726,54 @@ main,
   grid-template-columns: 18px minmax(0, 1fr);
 }
 
+.education-timeline .timeline-entry {
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 280px);
+}
+
+.education-timeline .timeline-entry + .timeline-entry {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  margin-top: 4px;
+  padding-top: 26px;
+}
+
+.education-timeline .timeline-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.education-timeline .project-date {
+  align-items: center;
+  background: rgba(253, 181, 21, 0.1);
+  border: 1px solid rgba(253, 181, 21, 0.26);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  justify-self: start;
+  margin: 0;
+  padding: 6px 12px;
+}
+
+.education-timeline .education-title-stack {
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.education-timeline .education-school {
+  line-height: 1.2;
+}
+
+.education-timeline .education-degree {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.3;
+}
+
+.education-timeline .education-school-line {
+  color: var(--california-gold);
+  font-size: 0.96rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 2px;
+}
+
 .timeline-rail {
   align-self: stretch;
   align-items: center;
