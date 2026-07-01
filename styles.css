@@ -518,6 +518,10 @@ main,
   padding-top: 70px;
 }
 
+.sister {
+  padding-top: 32px;
+}
+
 .section-heading {
   align-items: center;
   display: flex;
@@ -528,6 +532,15 @@ main,
 
 .section-heading h2 {
   font-size: clamp(1.45rem, 2.2vw, 2.2rem);
+}
+
+.section-description {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.16rem;
+  font-weight: 600;
+  line-height: 1.95;
+  margin: 0 0 24px;
+  max-width: 840px;
 }
 
 .skills {
@@ -969,8 +982,10 @@ main,
 .sister .timeline-media {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 4px;
   align-items: start;
+  grid-auto-rows: minmax(min-content, auto);
 }
 
 .fun .timeline-media img:nth-of-type(1),
@@ -1000,9 +1015,10 @@ main,
 .fun .timeline-media figcaption,
 .sister .timeline-media figcaption {
   color: var(--soft);
-  font-size: 1rem;
+  font-size: 1.02rem;
+  font-weight: 500;
   line-height: 1.6;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .timeline-media img,
