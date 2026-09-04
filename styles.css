@@ -573,7 +573,6 @@ main,
   padding: 28px;
 }
 
-.outside_of_ai .education-card,
 .sister .education-card {
   grid-template-columns: 1fr;
 }
@@ -989,7 +988,7 @@ main,
 }
 
 .outside_of_ai .timeline-media {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   row-gap: 8px;
 }
 
